@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element selctor */
+        h1,p{
+            background-color: blue;
+        }
+
+        /* class selector */
+        .Maths{
+            background-color: yellow;
+        }
+        .Physics{
+            background-color: red;
+            color: white;
+        }
+
+        /* Id- selector */
+        #M{
+            background-color: blue;
+        }
+        #H{
+            background-color: pink;
+        }
+    
+
+        /* child selector */
+        .parent >p{
+        background-color: red;
+        }
+
+        /* decendant selector */
+        .parent p{
+            background-color: red;
+        }
+
+        /* universal selector */
+        *{
+            background-color: black;
+            color: white;
+            /* padding: 0;
+            margin: 0; */
+        }
+
+        /* psuedo-selectors */
+        li:first-child{
+            background-color: yellow;
+        }
+        li:last-child{
+            background-color: red;
+        }
+        li:nth-child(3){
+            background-color: blue;
+        }
+        li:nth-child(5){
+            background-color: white;
+            color: black;
+        }
+
+        /* anchor states */
+        a:link{
+            color: blue;
+        }
+
+        a:visited{
+            color: yellow;
+        }
+
+        a:active{
+            color: red;
+        }
+
+        a:hover{
+            color: pink;
+        }
+
+        /* psuedo elements */
+        .Fancy::before{
+            content: '😁';
+        }
+        .Fancy::after{
+            content:'💀'
+        }
+    </style>
+</head>
+<body>
+    <h1 class="Maths">This is lecture - 13 , CSS Selectors - Maths</h1>
+
+    <p class="Physics">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, quae! -Physics</p>
+
+    <h2 id="H">This is brand new h2 Tag</h2>
+
+    <h3 class="Physics">This is brand new h3 Tag - Physics</h3>
+
+    <!-- <ul>
+        <li>superman</li>
+        <li>spiderman</li>
+        <li>batman</li>
+    </ul> -->
+
+    <p class="Maths" id="M">This is brand new paragraph - Maths</p>
+
+    <!-- child selector -->
+    <div class="parent">
+        <p>child-1</p>
+        <p>child-2</p>
+        <div>
+            <p>child-3</p>
+        </div>
+    </div>
+
+    <!-- psuedo selctors -->
+    <ul>
+        <li>Superman</li>
+        <li>batman</li>
+        <li>spiderman</li>
+        <li>thor</li>
+        <li>Iron man</li>
+        <li>Loki</li>
+    </ul>
+
+    <a href="https://www.youtube.com/watch?v=Zrs4bb_rMxY&list=PL-CeQccLavFeytqS_ALj97JNd4PF4gc1z&index=13"target="_blank">Normal Link</a>
+
+    <a href="https://www.youtube.com/watch?v=Zrs4bb_rMxY&list=PL-CeQccLavFeytqS_ALj97JNd4PF4gc1z&index=13"target="_blank">Visited Link</a>
+
+    <a href="https://www.youtube.com/watch?v=Zrs4bb_rMxY&list=PL-CeQccLavFeytqS_ALj97JNd4PF4gc1z&index=13"target="_blank">Hover Link</a>
+
+    <a href="https://www.youtube.com/watch?v=Zrs4bb_rMxY&list=PL-CeQccLavFeytqS_ALj97JNd4PF4gc1z&index=13"target="_blank">Active Link</a>
+
+    <p class="Fancy">Hello Aapka Swaagat hai</p>
+  
+</body>
+</html>

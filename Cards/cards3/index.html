@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            min-height: 100vh;
+            width: 100%;
+            padding: 20px;
+            background-color: rgb(72, 72, 141);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 100%;
+            max-width: 1000px;
+            height: 500px;
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+            overflow: hidden;
+        }
+
+        .leftbox {
+            color: white;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 500px;
+            background-color: rgb(19, 19, 72)
+            /* border: 2px black solid; */
+        }
+
+        .rightbox {
+            width: 100%;
+            max-width: 500px;
+            height: 100%;
+            
+        }
+        .stats{
+            margin: 20px;
+            margin-top: 80px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+        }
+        .numbers{
+            display: flex;
+            flex-direction: column;
+        }
+        .head{
+            padding: 20px;
+            text-align: left;
+            margin-bottom: 50px;
+            margin-top: 40px;
+        }
+        .para{
+            padding: 20px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="leftbox">
+                <h1 class="head" >Get Insights that help your your business grow</h1>
+                <p class="para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic corporis culpa tempore id distinctio error adipisci eaque, eveniet dolores eum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, numquam?
+                </p>
+                <div class="stats">
+                    <div class="numbers">
+                        <h1>10K+</h1>
+                        <p>connections</p>
+                    </div>
+                    <div class="numbers">
+                        <h1>214</h1>
+                        <p>paid users</p>
+                    </div>
+                    <div class="numbers">
+                        <h1>12M+</h1>
+                        <p>views</p>
+                    </div>
+                </div>
+            </div>
+            <div class="rightbox">
+                <img src="hq720.jpg" alt="image" height="100%" width="100%">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

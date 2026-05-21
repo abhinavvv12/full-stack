@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form & input fields</title>
+</head>
+<body>
+
+    <h1>Form & input Fields</h1>
+
+    <form action = app.js>
+
+        <label>Name : </label>
+        <input type="text" placeholder="enter your name" required>
+
+        <br><br>
+
+        Name : <input type="text" placeholder="enter your name">
+
+        <br><br>
+
+        <label for="Radio">radio</label>
+        <input type="radio" required>
+
+        <br><br>
+
+        <label for="password">password</label>
+        <input type="password" placeholder="enter your password" required>
+
+        <br><br>
+
+        <label for="checkbox">checkbox</label>
+        <input type="checkbox"required>
+
+        <br><br>
+
+        <label for="email">email</label>
+        <input type="email" placeholder="enter your name" required>
+
+        <br><br>
+
+        <label for="Gender">Gender : </label>
+
+        <label for="Male">Male</label>
+        <input
+         type="radio" value = "male" name = "gender" required>
+
+        <label for="Female">Female</label>
+        <input
+         type="radio" value = "female" name = "gender" required>
+
+         <br><br>
+
+         <label for="hobby">Hobby</label>
+         <br>
+         <input type="checkbox" name = "hobby">
+         <label for="Singing">Singing</label>
+         <br>
+         <input type="checkbox" name ="hobby">
+         <label for="Dancing">Dancing</label>
+         <br>
+         <input type="checkbox" name = "hobby">
+         <label for="Writing">Writing</label>
+
+         <br><br>
+
+         <label for="city">Choose a city: </label>
+         <select>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Lucknow">Lucknow</option>
+            <option value="Chennai">Chennai</option>
+         </select>
+
+         <br><br>
+
+         <label for="DOB">DOB: </label>
+         <input type="datetime-local" required>
+
+         <br><br>
+
+         <label for="">Tell me about yourself</label>
+         <br>
+         <textarea rows = 5 cols = 40 name="" id=""></textarea>
+
+         <br><br>
+
+         <button>Submit</button>
+         <input type="submit" value="Post">
+         <input type="Submit" value="Submit the form">
+         
+
+    </form>
+</body>
+</html>

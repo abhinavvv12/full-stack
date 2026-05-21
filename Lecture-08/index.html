@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Selectors-ID & Class</title>
+
+    <!-- styling should be done in the head -->
+    <style>
+        /* tag names are used to access elements, to style tags */
+        h1{
+            background-color: yellow;
+            color: white;
+        }
+
+        h2{
+            background-color: green;
+            color: whitesmoke;
+        }
+
+        h3{
+            background-color: pink;
+            color: brown;
+        }
+
+        p{
+            background-color: blue;
+            color: darkblue;
+        }
+
+        /* "." is used to access class tags */
+        .abhinav{
+            background-color: brown;
+        }
+        .abhi{
+            background-color: blue;
+        }
+
+        /* "#" is used to access id tags */
+        #ram{
+            background-color: whitesmoke;
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- same class name can be used to different tags, to wrap them into one class -->
+
+    <h1 class="abhinav">HTML Selectors and classes, A-MATHS</h1>
+    <h1 class="abhi">This is Brand new h1, B</h1>
+
+    <!-- ID should be unique, it should not be given to any other tag -->
+    <h2 class="abhinav" id="ram">This is h2 , C-MATHS</h2>
+    <h3 class="abhi">This is h3 , D-MATHS </h3>
+    
+    <p class = "abhinav">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, odio!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi veniam amet impedit!</p>
+    
+</body>
+</html>

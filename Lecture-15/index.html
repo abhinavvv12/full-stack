@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding, Margin,Border, Box-Model</title>
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HTML works on this basic principle -->
+    <!-- CPBM -->
+    <!-- 1.Content -->
+    <!-- 2.Padding -->
+    <!-- 3.Border -->
+    <!-- 4.Margin -->
+
+    <h1>Padding, Margin & Box Box-Model</h1>
+
+    <!-- padding -->
+    <div class="box"></div>
+
+</body>
+
+</html>
+
+count = 0
+def isPrime(num):
+for i in range(2,num):
+if num%i==0:
+return False
+return True
+# even indices
+for i in range(0,len(nums),2):
+if isPrime(nums[i]):
+continue
+else:
+count1=0
+count2=0
+el = nums[i]
+while isPrime(el)==False:
+el+=1
+count1+=1
+while isPrime(el)==False:
+el-=1
+count2-=1
+count = min(count1,count2)
+
+# odd indices
+for i in range(0,len(nums),2):
+if isPrime(nums[i]):
+count1=0
+count2=0
+el = nums[i]
+while isPrime(el)==True:
+el+=1
+count1+=1
+while isPrime(el)==True:
+el-=1
+count2-=1
+else:
+continue
+count += min(count1,count2)
