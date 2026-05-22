@@ -1,0 +1,200 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #090b10, #061123);
+    color: #f1f5f9;
+    line-height: 1.6;
+    padding: 30px;
+}
+
+/* Main Container */
+main{
+    max-width: 1100px;
+    margin: auto;
+    background-color: rgba(255,255,255,0.05);
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
+}
+
+/* Header */
+header{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h2{
+    font-size: 2.8rem;
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+header p{
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+/* Links */
+a{
+    color: #7dd3fc;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+a:hover{
+    color: #38bdf8;
+    text-decoration: underline;
+}
+
+/* About Section */
+main p{
+    font-size: 1rem;
+    margin-top: 15px;
+}
+
+/* Profile Image */
+img{
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    border: 4px solid #38bdf8;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* Sections */
+div{
+    margin-top: 35px;
+    padding: 25px;
+    background-color: rgba(255,255,255,0.04);
+    border-radius: 15px;
+    transition: 0.3s ease;
+}
+
+div:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(56,189,248,0.2);
+}
+
+/* Headings */
+h2{
+    color: #38bdf8;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    border-left: 5px solid #38bdf8;
+    padding-left: 10px;
+}
+
+h3{
+    color: #e2e8f0;
+    margin-bottom: 10px;
+}
+
+/* Lists */
+ul{
+    list-style: none;
+}
+
+ul li{
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+ul li::before{
+    content: "•";
+    color: #38bdf8;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 0;
+}
+
+/* Skills Section */
+.skills li{
+    display: inline-block;
+    background-color: #0ea5e9;
+    color: white;
+    padding: 8px 14px;
+    margin: 8px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* Project Cards */
+.project{
+    background-color: rgba(255,255,255,0.03);
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.project p{
+    margin-top: 10px;
+}
+
+/* Details Dropdown */
+details{
+    margin-top: 20px;
+    background-color: rgba(255,255,255,0.04);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+summary{
+    cursor: pointer;
+    font-weight: 600;
+    color: #38bdf8;
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    color: #cbd5e1;
+    font-size: 0.95rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px){
+
+    body{
+        padding: 15px;
+    }
+
+    main{
+        padding: 20px;
+    }
+
+    header h2{
+        font-size: 2rem;
+    }
+
+    h2{
+        font-size: 1.4rem;
+    }
+
+    img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .skills li{
+        display: block;
+        width: fit-content;
+    }
+}
