@@ -1,80 +1,220 @@
- /* GOOGLE FONT */
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Finlandica+Headline:ital,wght@0,100..900;1,100..900&family=Momo+Signature&display=swap');
+/* GOOGLE FONT */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* GLOBAL STYLING */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+/* MAIN CONTAINER */
+
+.main-container{
+    width: 100%;
+}
+
+/* =========================
+        NAVBAR
+========================= */
+
+.navbar{
+    width: 80%;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1.5rem 0;
+    border: 2px solid black;
+}
+
+/* LOGO */
+
+.title{
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.title img{
+    width: 40px;
+    height: 40px;
+}
+
+.title h1{
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: black;
+}
+
+/* NAV ITEMS */
+
+.items{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.items a{
+    text-decoration: none;
+    color: rgb(100, 100, 100);
+    font-size: 1rem;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.items a:hover{
+    color: rgb(92, 92, 220);
+}
+
+/* CONTACT BUTTON */
+
+.contact{
+    background-color: rgb(92, 92, 220);
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.contact:hover{
+    background-color: rgb(70, 70, 190);
+}
+
+.contact a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+/* =========================
+        HERO SECTION
+========================= */
+
+.hero-section{
+    width: 80%;
+    margin: 3rem auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 5rem;
+}
+
+/* LEFT BOX */
+
+.left-box{
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 1.8rem;
+    border: 1px solid black;
+}
+
+/* SMALL HEADING */
+
+.l1 p{
+    color: rgb(92, 92, 220);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* MAIN HEADING */
+
+.l2 h1{
+    font-size: 4rem;
+    line-height: 1.1;
+    font-weight: 700;
+    color: black;
+}
+
+/* DESCRIPTION */
+
+.l3 p{
+    color: rgb(110, 110, 110);
+    font-size: 1.1rem;
+    line-height: 1.8;
+
+    width: 90%;
+}
+
+/* BUTTON SECTION */
+
+.l4{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.l4 a{
+    text-decoration: none;
+    padding: 0.9rem 1.6rem;
+    border-radius: 8px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+/* START BUTTON */
+
+.l4 a:first-child{
+    background-color: rgb(92, 92, 220);
+    color: white;
+}
+
+.l4 a:first-child:hover{
+    background-color: rgb(70, 70, 190);
+}
+
+/* TAKE TOUR BUTTON */
+
+.l4 a:last-child{
+    background-color: rgb(58, 58, 58);
+    color: white;
+}
+
+.l4 a:last-child:hover{
+    background-color: black;
+}
+
+/* RIGHT BOX */
+
+.right-box{
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* IMAGE */
+
+.right-box img{
+    width: 100%;
+    max-width: 500px;
+    height: 600px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.2);
+}
 
 
- * {
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
-     font-family: 'Poppins', sans-serif;
- }
-
- body {
-     height: 100%;
-     width: 100%;
- }
-
- /* Nav Bar */
-
- .main-container {
-     display: flex;
-     justify-content: center;
- }
-
- .navbar {
-     display: flex;
-     flex-direction: row;
-     justify-content: space-between;
- }
-
- .title {
-     display: flex;
-     flex-direction: row;
-     justify-content: left;
-     padding: 0.8rem;
-     margin: 0.8rem;
-     padding-right: 12rem;
- }
-
- .items a {
-     padding: 0.3rem;
-     margin: 0.3rem;
-     margin-top: 1.6rem;
-     text-decoration: none;
-     color: rgb(104, 87, 87);
- }
-
- .contact {
-     padding: 1rem;
-     margin: 1rem;
- }
-
- .title img {
-     height: 40px;
-     width: 40px;
- }
-
- .items {
-     display: flex;
-     flex-direction: row;
-     justify-content: space-around;
-     margin-top: 0.7rem;
- }
-
- .contact {
-     /* padding: 0.1rem; */
-     background-color: rgb(62, 62, 188);
-     border-radius: 5px;
-     height: 1rem;
-     display: flex;
-     align-items: center;
-     margin-left: 7rem;
-     margin-top: 1.5rem;
- }
-
- .contact a {
-     color: white;
-     text-decoration: none;
- }
-
- 
