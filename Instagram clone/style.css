@@ -1,0 +1,141 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    /* height: 100%; */
+    width: 100%;
+    /* min-height: 100vh; */
+}
+
+.main-container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    color: black;
+}
+
+.sidebar{
+    width: 20%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-evenly; 
+    align-items: start;
+    border: 1px solid white;
+}
+.main-content{
+    width: 65%;
+}
+.suggestion-box{
+    width: 25%;
+}
+.item{
+    display: flex;
+    flex-direction: row;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    gap: 0.5rem;
+    
+}
+.item img{
+    height: 4rem;
+    width: 4rem;
+}
+a p{
+    text-decoration: none;
+    color: black;
+}
+
+.stories{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    justify-content: space-around;
+    padding-top: 1rem;
+}
+.story{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+
+}
+.story img{
+    height: 4rem;
+    width: 4rem;
+    border-radius:30px ;
+    /* border: 4px solid transparent;
+    padding: 4px; */
+}
+.story p{
+    font-size: small;
+}
+.post{
+    padding-top: 3rem;
+    gap: 2rem;
+}
+.profile{
+    display: flex;
+    flex-direction: row;
+    gap: 0.4rem;
+    align-items: center;
+}
+.dp img{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+.post-photo img{
+    height: 10%;
+    width: 100%;
+}
+
+.interactions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+}
+
+.like-comment-share{
+    gap: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+.comment img {
+    height: 5rem;
+    width: 5rem;
+}
+
+.interactions img{
+    height: 3rem;
+    width: 3rem;
+}
+.suggestion-box{
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding-left: 3rem;
+    gap: 2rem;
+}
+.profile-box{
+    display: flex;
+    /* flex-direction: row; */
+}
+.pfp img{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+.suggested{
+    display: flex;
+    flex-direction: row;
+}
