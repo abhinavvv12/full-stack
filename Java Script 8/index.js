@@ -35,10 +35,10 @@
 
 
 
-// Temporal dead zone
-console.log(marks);
-console.log("abhinav");
-console.log('Jimmy');
-console.log(marks);
-let marks = 90;
-console.log(marks);
+// // Temporal dead zone
+// console.log(marks);
+// console.log("abhinav");
+// console.log('Jimmy');
+// console.log(marks);
+// let marks = 90;
+// console.log(marks);
