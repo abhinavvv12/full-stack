@@ -34,4 +34,4 @@
 
 
 // Garbage Collector 
-
+// it is automatic in Java Script not manual
