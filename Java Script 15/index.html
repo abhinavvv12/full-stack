@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM CSS Animation Demo</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+
+    #box {
+      width: 100px;
+      height: 100px;
+      background-color: skyblue;
+      margin: 20px;
+      transition: all 1s ease; /* Smooth transitions */
+    }
+
+    .move-right {
+      transform: translateX(200px);
+    }
+
+    .grow {
+      width: 200px;
+      height: 200px;
+    }
+
+    .fade {
+      opacity: 0;
+    }
+
+    @keyframes bounce {
+      0%   { transform: translateY(0); }
+      50%  { transform: translateY(-50px); }
+      100% { transform: translateY(0); }
+    }
+
+    .bounce {
+      animation: bounce 1s infinite;
+    }
+  </style>
+</head>
+<body>
+  <h2>DOM CSS Animation Demo</h2>
+  <div id="box"></div>
+
+  <!-- Buttons -->
+  <button id="move-btn">Move Right</button>
+  <button id="grow-btn">Grow</button>
+  <button id="fade-btn">Fade Out</button>
+  <button id="bounce-btn">Bounce</button>
+  <button id="reset-btn">Reset</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
