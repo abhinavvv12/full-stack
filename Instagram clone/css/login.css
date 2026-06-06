@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+}
+
+.main-container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-page{
+    width: 60%;
+    height: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 4rem;
+    /* align-items: center; */
+    /* background-color: blue; */
+    /* border: 1px solid black; */
+    gap: 3rem;
+    /* gap: 2rem; */
+}
+
+.phone-mockup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.login-box{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 1rem;
+    justify-content: center;
+    border: 1px solid #dbdbdb;
+    border-radius: 1rem;
+
+}
+
+
+#logo{
+    width:90% ;
+    height: 80%;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 0%;
+}
+
+.phone-mockup img{
+    height: 100%;
+    width: 100%;
+
+}
+
+.input-field{
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+}
+
+#submit {
+    background-color: #0095f6;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+#or{
+    margin: auto;
+}
+
+.facebook-login {
+    margin: auto;
+}
+.forgot-password {
+    margin: auto;
+}
+.signup-box {
+    margin: auto;
+}
