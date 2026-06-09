@@ -24,7 +24,7 @@ body{
     cursor: pointer;
 }
 .password{
-    padding: 10px;
+    padding: 5px;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -67,4 +67,81 @@ body{
 }
 .gen{
     height: 30px;
+}
+
+
+/* =========================
+   Tablet Devices
+========================= */
+@media (max-width: 768px) {
+
+    .container{
+        margin: 120px 30px;
+    }
+
+    .container h1{
+        font-size: 2rem;
+    }
+
+    .password{
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .password input{
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .generate{
+        width: 220px;
+    }
+}
+
+
+/* =========================
+   Mobile Devices
+========================= */
+@media (max-width: 480px) {
+
+    body{
+        padding: 20px;
+    }
+
+    .container{
+        margin: 100px 0 0 0;
+        width: 100%;
+    }
+
+    .container h1{
+        font-size: 1.8rem;
+        line-height: 1.3;
+    }
+
+    .password{
+        width: 100%;
+        padding: 8px;
+    }
+
+    .password input{
+        width: 100%;
+        height: 45px;
+        font-size: 15px;
+    }
+
+    .password img{
+        height: 30px;
+    }
+
+    .generate{
+        width: 100%;
+        max-width: 250px;
+        height: 50px;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .gen{
+        height: 24px;
+    }
 }
